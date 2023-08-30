@@ -18,12 +18,13 @@
     position: relative;
     display: flex;
     width: 90%;
-    justify-content: space-around;
+    justify-content: center;
     
 }
 
 .title__logoM {
-    width: 40%;   
+    width: 32rem;   
+    height: 32rem;
     background-color: #000000;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
@@ -61,22 +62,70 @@
     transition: all 0.5s;
 
     &:hover{
-        transform: scale(1.1);
+        color: #c92629;
+        transform: scale(1.2);
     }
 
 }
 
 .title__subsection {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: start;
     color: #fec32b;
     padding-top: 2rem;
     font-weight: bold;
     padding-bottom: 2rem;
 }
 
+.title__intro,
+.title__subsection {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.title__network {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title__network__item {
+
+    width: 22%;
+    text-align: center;
+    transition: all 0.5s;
+    &:hover{
+        color: #c92629;
+        transform: scale(1.2);
+    }
+
+}
+
+.title__logo{
+    transition: all 0.5s;
+    
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+.title__p {
+    padding-top: 0.5rem;
+    
+    
+}
+
+
 /* Responsive mobiles */
 @media screen and (max-width: 767px) {
+    .title {
+        height: 68vh;
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
     .title__div{
         position: relative;
         display: flex;
@@ -90,14 +139,76 @@
     }
 
     .title__container{
-        width: 100%;
+        width: 31rem;
         padding: 1rem;
         flex: auto;
         border-radius: 5%;
     }
+    .title__intro {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .title__name {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .title__subsection{
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .title__network {
+        display: flex;
+    }
+
+    .title__network__item {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .title__p {
+        font-size: 12px;
+    }
+
+    
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1193px) {
-    
+    .title {
+        height: 68vh;
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .title__logoM {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .title__intro {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .title__name {
+        font-size: 3.3rem;
+    }
+
+    .title__subsection {
+        font-size: 1.2rem;
+    }
+
+    .title__network {
+        display: flex;
+    }
+
+    .title__p {
+        font-size: 1rem;
+    }
 }
