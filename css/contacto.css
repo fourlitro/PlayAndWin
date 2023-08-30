@@ -1,5 +1,5 @@
 .formcontacto {
-    padding: 3rem 15rem;
+    padding: 3rem 6rem;
     background-color: #00a6fb;
 }
 
@@ -9,13 +9,12 @@
 }
 
 .formcontacto--izq {
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .formcontacto__img {
     width: 100%;
     border-radius: 5px;
-
 
 }
 
@@ -26,7 +25,7 @@
 .formcontacto__title {
     font-size: 3rem;
     font-weight: bold;
-    color: #f77f00;
+    color: #fec32b;
 }
 
 .formcontacto__subtext {
