@@ -1,0 +1,55 @@
+:root{
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--open-sans);
+    margin: 0;
+    padding: 0%;
+    line-height: 1;
+    
+}
+
+/*para la barra scroll*/
+body::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #fec32b;
+}
+
+#btn-ir-arriba {
+    display: none;
+    cursor: pointer;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    background: hsl(210, 29%, 29%);
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+  
+    box-shadow: 0px 12px 7px rgba(0, 0, 0, .1);
+    transition: 300ms ease;
+  }
+  
+  #btn-ir-arriba:hover {
+    background: hsl(210, 29%, 24%);
+    transform: translateY(-0.5rem);
+  }
