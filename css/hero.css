@@ -26,8 +26,8 @@
     width: 32rem;   
     height: 32rem;
     background-color: #000000;
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
     
 
 }
@@ -36,8 +36,8 @@
     
     background-color: #1e1d1d;
     opacity: 0.95;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
     padding: 1rem 5rem;
     transition: all 5s;
 }

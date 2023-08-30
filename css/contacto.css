@@ -1,11 +1,12 @@
 .formcontacto {
-    padding: 3rem 6rem;
+    padding: 2rem 6rem;
     background-color: #00a6fb;
 }
 
 .formcontacto__contacto {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .formcontacto--izq {
@@ -26,6 +27,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: #fec32b;
+    text-align: center;
 }
 
 .formcontacto__subtext {
@@ -40,7 +42,7 @@
     background: #fff;
     border-radius: 0.3rem;
     height: 2.5rem;
-    width: 90%;
+    width: 100%;
     margin: 1rem 0rem;
     border: none;
     font-size: 0.9rem;
@@ -49,7 +51,7 @@
 }
 
 .formcontacto__textarea {
-    width: 90%;
+    width: 100%;
     background: #fff;
     border-radius: 0.3rem;
     margin: 1rem 0rem;
@@ -69,7 +71,7 @@
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem;
-    width: 91%;
+    width: 100%;
     transition: all 0.5s;
     cursor: pointer;
     align-items: center;
@@ -91,6 +93,7 @@
 
     .formcontacto__title{
         font-size: 2rem;
+        text-align: center;
         text-align: left;
     }
 
@@ -120,12 +123,12 @@
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 1193px) {
     .formcontacto {
-        padding: 3rem 2rem;
+        padding: 2rem 6rem;
     }
 
     .formcontacto__contacto {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .formcontacto__input{
