@@ -1,6 +1,8 @@
 .evento{
     padding: 2rem 6rem;
     background-color: #F5BB00;
+
+    transition: all 0.5s;
 }
 
 .evento__title__section{
@@ -13,6 +15,8 @@
     margin-bottom: 1rem;
     transition: all 0.5s;
     border-bottom: 5px solid #1b1a1a;
+
+    transition: all 0.5s;
 }
 
 .evento__boxes{
@@ -28,36 +32,43 @@
     margin: 1%;
     flex-direction: column;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 12%;
 }
 
 .evento__box__img{
     width: 100%;
     
     
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-top-right-radius: 12%;
+    border-top-left-radius: 12%;
+}
+
+.evento__box__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 .evento__box__title{
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    text-align: left;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    text-align: center;
     font-weight: bold; 
     color:#00a6fb;  
 } 
 
 .evento__box__subtitle{
     color: #fec32b;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
     text-align: left;   
 }
 
 .evento__box__paragraph{
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
-    text-align: center; 
+    text-align: justify; 
 }
 
 .evento_page{
@@ -71,7 +82,7 @@
     border: none;
     color: #000;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem;
     width: 20rem;
     transition: all 0.5s;
@@ -82,5 +93,60 @@
         color: #fff;
         background-color: #c92629;
         transform: translateY(1rem);
+    }
+}
+
+
+/* Responsive mobiles */
+@media screen and (max-width: 767px) {
+    .evento{
+        padding: 1rem 3rem;
+    }
+
+    .evento__title__section{
+        font-size: 3rem;
+    }
+
+    .evento__boxes{
+        flex-direction: column;
+    }
+
+    .evento__box__img{
+        width: 100%;
+
+    }
+
+    .evento__box__subtitle{
+        padding: 0.2rem;
+    }
+
+
+    .evento__button{
+        padding: 1rem;
+    }
+ 
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1193px) {
+    .evento{
+        padding: 1rem 2rem;
+    }
+
+    .evento__title__section{
+        font-size: 3rem;
+    }
+
+    .evento__boxes{
+        flex-direction: column;
+    }
+
+    .evento__box{
+        flex-direction: row;
+    }
+
+    .evento__box__img{
+        width: 50%;
+        border-radius: 12%;
     }
 }

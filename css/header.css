@@ -1,4 +1,4 @@
-.menu__header{
+.menu__header {
     background-color: black;
     display: flex;
     align-items: center;
@@ -6,44 +6,44 @@
     padding: 2rem 3rem;
     height: 2.5rem;
     position: relative;
-    
+
     transition: all 0.5s;
 }
 
-.header__logo{
+.header__logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     margin: 0;
-   
+
 }
 
-.logo{
+.logo {
     width: 5rem;
 }
 
-.logoLetras{
+.logoLetras {
     width: 20rem;
 }
 
 
-.logoMovil{
+.logoMovil {
     display: none;
     width: 5rem;
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     justify-content: space-between;
     transition: all 0.5s;
 }
 
-.headerPrincipal_nav_item{
+.headerPrincipal_nav_item {
     color: white;
     display: inline-block;
     text-decoration: none;
-    
+
     font-size: 1.5rem;
     margin-right: 0.45rem;
     margin-left: 0.45rem;
@@ -54,25 +54,32 @@
 
 /* Responsive mobiles */
 @media screen and (max-width: 767px) {
-    .menu__header{
+    .menu__header {
         display: flex;
         flex-direction: column;
-        padding: 6rem 0rem;
+        padding: 8rem 1rem;
         justify-content: space-around;
 
         transition: all 0.5s;
     }
-    .logo{
+
+    .header__nav {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+
+    .logo {
         display: none;
 
     }
-    
-    .logoLetras{
+
+    .logoLetras {
         display: none;
 
     }
 
-    .logoMovil{
+    .logoMovil {
         display: block;
         width: 10rem;
         padding: 2%;
@@ -82,7 +89,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1193px) {
-    .menu__header{
+    .menu__header {
         display: flex;
         flex-direction: row;
         padding: 6rem 2rem;
@@ -91,15 +98,16 @@
         transition: all 0.5s;
     }
 
-    .logo{
-        display: none;
-    }
-    
-    .logoLetras{
+
+    .logo {
         display: none;
     }
 
-    .logoMovil{
+    .logoLetras {
+        display: none;
+    }
+
+    .logoMovil {
         display: block;
         width: 10rem;
         padding: 2%;
